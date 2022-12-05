@@ -5,21 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/html5reset.css">
 	<!-- Link to the stylesheet -->
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
-    <title>Miscellaneous Information About Me</title>
+	<link rel="stylesheet" href="css/style1.css">
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+    <!-- jQuery library -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+
+    <!-- Latest compiled JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <title>Miscellaneous Info About Me</title>
 </head>
 <body>
+    <a class = "skip" href="#skip">Skip to Main Content</a>
     <header>
-        <!-- <img src="images/logo.png" alt="" id = "logo"> -->
-        <h1>Miscellaneous Information About Me</h1>
-        <nav>
-          <ul class="nav_links">
-            <li class="nav_html"><a href="index.html">Back to Main Page</a></li>
-            <li class="nav_html"><a href="more_info.html">More About Me</a></li>
-            <li class="nav_html"><a href="contact.html">Contact Me!</a></li>
-      </nav>
+        <button class="header_button" id="btnNav" type="button">
+            <i class="material-icons">menu</i>
+        </button>
+        <img id="mk_logo" src="images/mk.png" alt="MK logo in darn brown">
+        <nav class = "nav " id="mainnave">
+            <!-- <div class="logo_name">MK</div> -->
+        <div class="nav_li">
+          <ul class="nav nav-pills" id = 'sidebar'>
+            <li class="nav__link"><a href="index.html">Main Page</a></li>
+            <li class="nav__link nav__link--active"><a href="more_info.html">More About Me</a></li>
+            <li class="nav__link"><a href="contact.html">Contact Me!</a></li>
+          </ul>
+        </div>
+        <div class="nav__overlay"></div>
+        </nav>
+
+        
     </header>
+    <div class="'contents-under">
+    <main class = "info" id = 'skip' tabindex=”-1″>
+
+    </main>
+    <footer>
+        <p>&copy; Maddie Kelsch 2022</p>
+    </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () =>{
+        const nav = document.querySelector('.nav');
+
+        document.querySelector('#btnNav').addEventListener('click', () =>{
+            nav.classList.add('nav--open');
+        });
+        document.querySelector('.nav__overlay').addEventListener('click', () =>{
+            nav.classList.remove('nav--open');
+    });
+});
+    
+</script>
 </body>
 </html>

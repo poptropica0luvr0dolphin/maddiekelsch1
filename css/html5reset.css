@@ -46,9 +46,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.gallery #gmail_logo, #linkedin_logo, #github_logo{
-	width: 100px;
-	height: 100px;
+.linked_in_div img, .personal_email_div img, .umich_email_div img, .github_div img, .slack_div img, .main_insta_div img, .finsta_div img, .snapchat_div img, .facebook_div img {
+	width: 180px;
+	height: 180px;
 }
 #gr_mi, #um_history, #umsi{
 	width: 200px;
