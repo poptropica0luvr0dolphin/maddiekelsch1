@@ -50,7 +50,6 @@ table {
 	width: 180px;
 	height: 180px;
 }
-#gr_mi, #um_history, #umsi{
-	width: 200px;
-	height: 200px;
+.gallery img{
+	width: 250px;
 }

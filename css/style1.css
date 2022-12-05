@@ -223,7 +223,30 @@ footer{
     color:#5b3e38;
 }
 
+#h1-pics h1{
+    font-family: "Playfair Display";
+    color:#f0a3da;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 20%;
+    padding: 10px;
+    background-color: #5b3e38;
+    border-radius: 10px;
+    border: 3px solid #f0a3da;
+}
 
+.gallery{
+    display: grid;
+    grid-template-columns: 500px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.gallery img{
+    max-width: 100%;
+    margin-bottom: 10px;
+    border: 3px solid #5b3e38;
+}
 
 
 @media only screen and (max-width: 724px){
@@ -355,7 +378,25 @@ footer{
         margin-left:15%;
     }
 
-   
+    .gallery{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        justify-content: center;
+        justify-items: center;
+        column-gap: 10px;
+    }
+    .gallery img{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    #pa, #awesome{
+        height: 95%;
+    }
+    #sail, #scoops, #ma, #cat, #pa{
+        border: 3px solid #f0a3da;
+    }
+
+
 
   
     }
@@ -385,5 +426,32 @@ footer{
         margin-bottom: 150px;
     
     }
+
+    .gallery{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-items: stretch;
+        justify-content: center;
+    }
+    #awesome{
+        height:auto;
+    }
+
+    #moon, #car, #awesome, #pa{
+        border: 3px solid #5b3e38;
+    }
+
+    #sail, #ma, #cat{
+        border: 3px solid #6CB5B9;
+    }
+
+    #scoops, #dino, #hockey{
+        border: 3px solid #f0a3da;
+    }
+
+    #pa{
+        grid-row: 4/ span 3;
+    }
+
 
   }
