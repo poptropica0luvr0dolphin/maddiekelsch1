@@ -48,7 +48,7 @@ header{
 }
 
 .header_button{
-    background: none;
+    background: #6CB5B9;
     border: none;
     color: #5b3e38;
     cursor: pointer;
@@ -317,11 +317,11 @@ footer{
 
     #mk_logo{
         margin-left: 25px;
-        width: 100px;
+        width: 120px;
     }
 
     .skip:focus{
-        top: 80px;
+        top: 100px;
         font-weight: bolder;
         background-color: #6CB5B9;
     }
@@ -406,6 +406,14 @@ footer{
         width: 320px;
     }
 
+    #mk_logo{
+        width:100px;
+    }
+
+    .skip:focus{
+        top: 80px;
+    }
+
     .contact_divs{
         display: flex;
         flex-wrap: wrap;
@@ -450,7 +458,7 @@ footer{
     }
 
     #pa{
-        grid-row: 4/ span 3;
+        grid-column: 2/3;
     }
 
 
